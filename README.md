@@ -1,0 +1,2 @@
+# InternationalizationDemo
+iOS项目国际化最便利的Demo
