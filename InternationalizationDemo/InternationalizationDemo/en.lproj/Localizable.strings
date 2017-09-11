@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  InternationalizationDemo
+
+  Created by 周荣水 on 2017/9/11.
+  Copyright © 2017年 周荣水. All rights reserved.
+*/
+
+"中国" = "China";
+"中文" = "chinese";
+"英文" = "english";
+"china" = "china_e";
+
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rUm-3s-Ffh"/>
+                        <viewControllerLayoutGuide type="bottom" id="BHR-bb-qYl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqt-ob-9s0">
+                                <rect key="frame" x="170" y="256" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="china" translatesAutoresizingMaskIntoConstraints="NO" id="k8Y-K5-I7N">
+                                <rect key="frame" x="67.5" y="120" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ts2-QJ-mxS"/>
+                                    <constraint firstAttribute="width" constant="240" id="uhe-Pr-Kwo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcD-Lk-teI">
+                                <rect key="frame" x="43" y="364" width="111" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="EOZ-jS-YFZ"/>
+                                    <constraint firstAttribute="width" constant="111" id="zc2-SD-kcx"/>
+                                </constraints>
+                                <state key="normal" title="中文"/>
+                                <connections>
+                                    <action selector="chineseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jEd-ix-OBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnE-i4-dDw">
+                                <rect key="frame" x="234" y="364" width="111" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="5Se-mG-U7T"/>
+                                    <constraint firstAttribute="height" constant="39" id="ChA-0Y-3Xd"/>
+                                </constraints>
+                                <state key="normal" title="英文"/>
+                                <connections>
+                                    <action selector="englishAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aJC-id-VMg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k8Y-K5-I7N" firstAttribute="top" secondItem="rUm-3s-Ffh" secondAttribute="bottom" constant="100" id="0GN-On-umu"/>
+                            <constraint firstItem="Rqt-ob-9s0" firstAttribute="centerX" secondItem="k8Y-K5-I7N" secondAttribute="centerX" id="0Kb-He-TOt"/>
+                            <constraint firstItem="k8Y-K5-I7N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cMw-pW-68e"/>
+                            <constraint firstItem="pnE-i4-dDw" firstAttribute="centerY" secondItem="FcD-Lk-teI" secondAttribute="centerY" id="eHK-yX-OC6"/>
+                            <constraint firstItem="Rqt-ob-9s0" firstAttribute="top" secondItem="k8Y-K5-I7N" secondAttribute="bottom" constant="8" id="ekN-NS-r7L"/>
+                            <constraint firstItem="FcD-Lk-teI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="g0b-EW-Eir"/>
+                            <constraint firstAttribute="trailing" secondItem="pnE-i4-dDw" secondAttribute="trailing" constant="30" id="mzw-IP-Snh"/>
+                            <constraint firstItem="FcD-Lk-teI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="43" id="vp9-bJ-CDY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryLable" destination="Rqt-ob-9s0" id="KhB-AY-zyt"/>
+                        <outlet property="flagImg" destination="k8Y-K5-I7N" id="AzE-7o-thO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="china" width="500" height="350"/>
+    </resources>
+</document>

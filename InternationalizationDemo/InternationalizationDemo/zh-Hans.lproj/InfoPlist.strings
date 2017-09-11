@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  InternationalizationDemo
+
+  Created by 周荣水 on 2017/9/11.
+  Copyright © 2017年 周荣水. All rights reserved.
+*/
+CFBundleDisplayName = "国际化示例";
